@@ -12,19 +12,20 @@ const useStyles = makeStyles(() => ({
     }
 }))
 
+const darkTheme = createTheme({
+    palette: {
+        primary: {
+            main: '#fff',
+        },
+        type: 'dark',
+    },
+});
+
 const Header = () => {
     const classes = useStyles();
     const history = useHistory();
-    const {currency, setCurrency} = CryptoState
+    const {currency, setCurrency} = CryptoState();
 
-    const darkTheme = createTheme({
-        palette: {
-            primary: {
-                main: '#fff',
-            },
-            type: 'dark',
-        },
-    });
     return (
         <ThemeProvider theme={darkTheme}>
             <AppBar color='transparent' position='static'>
@@ -36,7 +37,7 @@ const Header = () => {
                                 style={{
                                     width: 100,
                                     height: 40,
-                                    marginRight: 15,
+                                    marginLeft: 15,
                             }}
                             value={currency}
                             onChange={(e) => setCurrency(e.target.value)}>
