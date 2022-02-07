@@ -31,7 +31,7 @@ const Header = () => {
             <AppBar color='transparent' position='static'>
                 <Container>
                     <Toolbar>
-                        <Typography onClick={() => history.push('/')} className={classes.title}>
+                        <Typography component={'div'} onClick={() => history.push('/')} className={classes.title}>
                             React Crypto
                             <Select variant='outlined'
                                 style={{

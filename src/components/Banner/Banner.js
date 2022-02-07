@@ -8,12 +8,14 @@ const useStyles = makeStyles(() => ({
 
     },
     bannerContent: {
+        background: '#1c1c1c',
         height: 400,
         display: 'flex',
         flexDirection: 'column',
         paddingTop: 25,
         justifyContent: 'space-around',
         border: '2px solid white',
+        borderRadius: '20px'
     },
     tagline: {
         display: 'flex',
