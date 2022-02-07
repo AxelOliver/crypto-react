@@ -1,5 +1,4 @@
 import { Container, makeStyles, Typography } from '@material-ui/core'
-import { mergeClasses } from '@material-ui/styles'
 import React from 'react'
 import Carousel from './Carousel'
 
